@@ -31,6 +31,6 @@ module.exports = function isFresh(stats, req, res) {
     if (etag && etag !== res.getHeader('ETag')) {
         return false;
     }
-    console.log("refreshRes执行完毕");
     return true;
+
 }

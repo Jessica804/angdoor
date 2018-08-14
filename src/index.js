@@ -23,6 +23,7 @@ const argv = yargs
     .help()
     .argv;
 
+
     const server = new Server(argv);
-    console.log(chalk.red(argv));
+    console2.log(chalk.red(argv));
     server.start();
